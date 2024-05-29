@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+</head>
+<body>
+    <!--Tables in Html-->
+
+    <table border="black"> <!--To create a table in html  ,, border="black" creates outline for table-->
+        <caption>Food Menu</caption>  <!--Caption is nothing but the title of the table-->
+
+
+        <tr>  <!--tr represents table row -->
+            <th>ITEM</th> <!--th represnts table head-->
+            <th>PRICE</th>
+        </tr>
+
+        <tr>               
+            <td>Samosa</td>     <!--td represents table data-->
+            <td>20</td>
+        </tr>
+
+        <tr>
+            <td>Chips</td>
+            <td>10</td>
+        </tr>
+
+
+
+    </table>
+    <hr>
+
+
+
+    <!--table using semanatic tag it is same only things is we use thead tbody and tfooter-->
+
+    by using semanatic tags
+    <table border="black"> <!--To create a table in html  ,, border="black" creates outline for table-->
+        <caption>Food Menu</caption>  <!--Caption is nothing but the title of the table-->
+
+        <!--table header-->
+        <thead>
+        <tr>  <!--tr represents table row -->
+            <th>ITEM</th> <!--th represnts table head-->
+            <th>PRICE</th>
+        </tr>
+        </thead>
+
+        <!--Table body-->
+        <tbody>
+        <tr>               
+            <td>Samosa</td>     <!--td represents table data-->
+            <td>20</td>
+        </tr>
+
+        <tr>
+            <td>Chips</td>
+            <td>10</td>
+        </tr>
+        </tbody>
+
+
+
+    </table>
+    <hr><hr>
+
+
+    <!--By using colspan adn rown span-->
+    By using colspan adn rown span
+    <table border="black"> <!--To create a table in html  ,, border="black" creates outline for table-->
+        <caption>Food Menu</caption>  <!--Caption is nothing but the title of the table-->
+
+        <!--table header-->
+        <thead>
+        <tr>  <!--tr represents table row -->
+            <th rowspan="2">ITEM</th> <!--th represnts table head-->
+            <th colspan="2">PRICE</th>
+        </tr>
+
+        <tr>
+            <th>INR</th>
+            <th>USD</th>
+        </tr>
+        </thead>
+
+        <!--Table body-->
+        <tbody>
+        <tr>               
+            <td>Samosa</td>     <!--td represents table data-->
+            <td>20</td>
+            <td>0.17</td>
+        </tr>
+
+        <tr>
+            <td>Chips</td>
+            <td>10</td>
+            <td>0.12</td>
+        </tr>
+        </tbody>
+
+
+
+    </table>
+
+
+
+
+
+
+
+    
+</body>
+</html>

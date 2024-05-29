@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms3</title>
+</head>
+<body>
+    <form action="/server">
+        <!--Name attribute when form gets submtted it shows the name value in the url-->
+        <div>
+            <label for="username">Enter the Username:</label>
+            <input type="text" id="username" placeholder="Username" name="user">
+        </div>
+        http://127.0.0.1:3000/server?username=Nithish <!--THis is when name="" attribute is used here name=value becomes a pair and 
+        shows in url-->
+        <br>
+
+        <button type="submit">Submit</button>
+        <hr><hr>
+
+        <!--another form for name attribute to expalin it clearly-->
+        <form action="https://www.youtube.com"> <!--Here when submitted is clicked it redirects to youtube page-->
+            <input type="text" placeholder="search in youtube" name="search_query" />
+            <button>Search</button>
+            
+            <!--https://www.youtube.com/results?search_query=google
+            here search_query is input value and google is what we search in youtube-->
+            <hr>
+
+
+
+        <!--CHECKBOX input-->
+        <label for="age">
+            I am 18+  This is Checkbox
+            <input type="checkbox" id="age" placeholder="age " name="age" >
+            <input type="checkbox" id="age" placeholder="age " name="age" checked /><!--By default to be checked-->
+        </label><hr>
+
+        <!--Radio BUtton-->
+        <div>
+            <!--to know what we have selected in url we must give value="" if value is not given ishows fruit=on if given fruit= selected fruit-->
+        <label for="apple">APPLE</label>
+        <input type="radio" id="apple" name="fruits" value="apple"><br>
+        <label for="Mango">Mango</label>
+        <input type="radio" id="Mango" name="fruits" value="Mango"><br>
+        <label for="kimi">kimi</label>
+        <input type="radio" id="kimi" name="fruits" value="kimi"><br>
+        <label for="banana">banana</label>
+        <input type="radio" id="banana" name="fruits" value="banana"><br>
+        </div><hr>
+
+
+        <div>
+            <!--Dropdown ELement-->
+            Choose your profession: 
+            <select name="profession" id="profession">
+                <!--FOr default option-->
+                <!--For default selected -->
+                <option>Select Your Profession</option>
+                <option value="stu" selected>Student</option>
+                <option value="dev">Developer</option>
+            </select>
+        </div>
+       <hr>
+
+        <div>
+            <!--Range Element-->
+            <label for="Volume">Select Your VOlume: </label>
+            <input type="range" id="Volume" min="0" max="100" name="vol">
+            <button>Submit</button>
+        </div><hr>
+
+        <div>
+            <label for="feedback">Please Provide a Feedback</label>
+            <textarea id="feedback" placeholder="Enter Your Feedback" rows="5" cols="50"></textarea>
+        </div>
+
+
+
+
+    </form>
+    
+</body>
+</html>
